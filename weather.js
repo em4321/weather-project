@@ -9,7 +9,7 @@ const spinner = `<div class="lds-ripple">
 <div></div>
 <div></div>
 </div>`;
-// function gthat gets the weather based on longitude and latitude
+// function that gets the weather based on longitude and latitude
 async function getWeather(latitude, longitude) {
   const { data } = await axios.get(
     `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&APPID=09bd509dc3f293584e3d0a44061be1ce&units=metric`
